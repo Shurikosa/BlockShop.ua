@@ -227,6 +227,13 @@ ul.subcategory {
 }
 .cards-container{
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 255px);
+    justify-content: center;
+    justify-items: center;
+    column-gap: 8px;
+    row-gap: 40px;
+    max-width: 1045px;
     margin-top: 30px;
     min-height: 860px;
     border: lightgreen solid 1px;
@@ -234,7 +241,7 @@ ul.subcategory {
 
 .card {
     display: flex;
-    width: 250px;
+    width: 240px;
     min-height: 400px;
     margin: 15px 15px 15px 15px;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
@@ -272,14 +279,24 @@ ul.subcategory {
     background-color: darkorange;
 }
 .card-price {
-   display: inline;
+    display: block;
     margin-left: 25px;
+    text-align: center;
+    font-size: 17px;
 }
 .card-price del {
     color: dimgrey;
 }
 .card-price > span > b {
     color: orangered;
+}
+.price {
+    font-size: 17px;
+    color: black;
+    font-weight: 400;
+}
+.card-prices {
+    max-height: 20px;
 }
 .card-title {
     display: block;
@@ -294,6 +311,7 @@ ul.subcategory {
 }
 .to-cart-button {
     display: block;
+    background-color: white;
     width: 90%;
     height: 40px;
     font-size: 18px;
@@ -301,6 +319,7 @@ ul.subcategory {
     color: green;
     margin-left: 12px;
     text-align: center;
+    border-radius: 3.5px;
 }
 .to-cart-button:hover {
     background-color: green;
