@@ -15,6 +15,7 @@ a {
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
+    justify-content: space-around;
 }
 .logo, .logo-menu, .company-info-container {
     display: inline-block;
@@ -327,7 +328,18 @@ ul.subcategory {
     transition: 0.3s;
 }
 
+/*----------------------- footer-container---------------------*/
 .footer {
-    background-color: burlywood;
+    background-color: #f1f1f1;
     margin-top: 40px;
+}
+.clear-fix {
+    padding: 40px 0 40px;
+    display: flex;
+    width: 100%;
+}
+.info-column {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
 }
