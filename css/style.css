@@ -343,3 +343,83 @@ ul.subcategory {
     width: 25%;
     text-align: center;
 }
+.logo-work-time b{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.logo-work-time p {
+    display: block;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.contacts-info b {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.contacts-info p {
+    display: block;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.info-links {
+    display: grid;
+    justify-content: space-around;
+    text-align: left;
+}
+.info-links b {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.info-links a {
+    font-size: 13px;
+    color: black;
+}
+.info-links a:hover {
+    color: green;
+    transition: 0.3s;
+}
+.info-links ul li {
+    display: block;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.describe-field p {
+    display: block;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.search-form-footer {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.input-name-field {
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+.input-email-field {
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+}
+.search-button-footer {
+    border: none;
+    background-color: lightgrey;
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.search-button-footer:hover {
+    background-color: lightgreen;
+    transition: 0.3s;
+}
