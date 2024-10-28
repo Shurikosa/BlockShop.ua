@@ -51,40 +51,48 @@ a {
     color: black;
 }
 .phones-column {
-    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
 }
 .phones-column img {
     margin-right: 5px;
     width: 25px;
     height: 25px;
 }
-.phones-column, .call-me {
-    display: inline-block;
+.phone-vodafon {
+    display: inline-flex;
+    padding-top: 5px;
 }
+.phone-kiyvstar {
+    display: inline-flex;
+    padding-top: 5px;
+}
+.phone-lifecell {
+    display: inline-flex;
+    padding-top: 5px;
+}
+
 .call-me {
     display: flex;
     margin-left: 70px;
     height: 62.4px;
     margin-top: 24px;
+    flex-direction: column;
+    align-items: center;
 }
 .call-me a{
     font-size: 18px;
     color: black;
 }
-.callback-icon img{
-    margin-right: 5px;
-    width: 25px;
-    height: 25px;
-}
+
 .call-me a:hover {
     color: green;
 }
 .time-working {
-    display: grid;
+    max-height: 30px;
     font-size: 14px;
     color: dimgrey;
-    margin-left: -145px;
-    align-content: center;
 }
 .phone-number-link {
     color: black;
