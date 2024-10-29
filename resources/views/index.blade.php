@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>BlockShop.ua</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+{{--    <link rel="stylesheet" href="resources/css/style.css">--}}
+    @vite(['resources/css/style.css', 'resources/js/category_toggle.js'])
 </head>
 <body>
     <div class="header">
         <div class="wrap-container">
             <div class="logo">
                 <a href="#">
-                    <img src="BlockShopLogo.png" alt="">
+                    <img src="{{Vite::asset('resources/graphics/icons/BlockShopLogo.png')}}" alt="">
                 </a>
             </div>
             <div class="logo-menu">
@@ -25,15 +26,15 @@
             <div class="company-info-container">
                 <div class="phones-column">
                     <div class="phone-vodafon">
-                        <img  src="vodafone.png" alt="">
-                        <a class="phone-number-link" data-mobile_provider="vodafon" href="tel:+380993456789">099 345 67 89</a>
+                        <img  src="{{Vite::asset('resources/graphics/icons/vodafone.png')}}" alt="">
+                        <a class="phone-number-link" data-mobile_provider="vodafone" href="tel:+380993456789">099 345 67 89</a>
                     </div>
                     <div class="phone-kiyvstar">
-                        <img src="kiyvstar.png" alt="">
+                        <img src="{{Vite::asset('resources/graphics/icons/kiyvstar.png')}}" alt="">
                         <a class="phone-number-link" data-mobile_provider="kiyvstar" href="tel:+380973456789">097 345 67 89</a>
                     </div>
                     <div class="phone-lifecell">
-                        <img src="lifecell.png" alt="">
+                        <img src="{{Vite::asset('resources/graphics/icons/lifecell.png')}}" alt="">
                         <a class="phone-number-link" data-mobile_provider="lifecell" href="tel:+380633456789">063 345 67 89</a>
                     </div>
                 </div>
@@ -45,15 +46,15 @@
                 </div>
                 <div class="cart-info">
                     <div class="cart-icon">
-                        <img src="cart.png" alt=""> Кошик порожній
+                        <img src="{{Vite::asset('resources/graphics/icons/cart.png')}}" alt=""> Кошик порожній
                     </div>
                 </div>
                 <div class="block-input-search">
-                    <form action="/index.html" class="search-form">
+                    <form action="#" class="search-form">
                         <label for="search"></label>
                         <input class="input-field" id="search" type="text" placeholder="Пошук">
                         <button type="submit" class="search-button">
-                            <img src="search.png" alt="Search">
+                            <img src="{{Vite::asset('resources/graphics/icons/search.png')}}" alt="Search">
                         </button>
                     </form>
                 </div>
@@ -176,13 +177,13 @@
             </div>
             <div class="content-container">
                 <div class="advertisement">
-                    <img src="crew%20&%20neue.gif" alt="">
+                    <img src="{{Vite::asset('resources/graphics/icons/crew%20&%20neue.gif')}}" alt="">
                 </div>
                 <div class="cards-container">
                     <div class="card">
                         <div class="card-top">
                             <a href="#" class="card-img">
-                                <img src="images/items/image_test_1.jpg" alt="">
+                                <img src="{{Vite::asset('resources/graphics/images/image_test_1.jpg')}}" alt="">
                             </a>
                         </div>
                         <div class="card-bottom">
@@ -207,7 +208,7 @@
                     <div class="card">
                         <div class="card-top">
                             <a href="#" class="card-img">
-                                <img src="images/items/image_test_2.jpg" alt="">
+                                <img src="{{Vite::asset('resources/graphics/images/image_test_2.jpg')}}" alt="">
                             </a>
                         </div>
                         <div class="card-bottom">
@@ -223,7 +224,7 @@
                     <div class="card">
                         <div class="card-top">
                             <a href="#" class="card-img">
-                                <img src="images/items/image_test_3.jpg" alt="">
+                                <img src="{{Vite::asset('resources/graphics/images/image_test_3.jpg')}}" alt="">
                             </a>
                         </div>
                         <div class="card-bottom">
@@ -251,7 +252,7 @@
                     <div class="card">
                         <div class="card-top">
                             <a href="#" class="card-img">
-                                <img src="images/items/image_test_4.jpg" alt="">
+                                <img src="{{Vite::asset('resources/graphics/images/image_test_4.jpg')}}" alt="">
                             </a>
                         </div>
                         <div class="card-bottom">
@@ -267,7 +268,7 @@
                     <div class="card">
                         <div class="card-top">
                             <a href="#" class="card-img">
-                                <img src="images/items/image_test_5.jpg" alt="">
+                                <img src="{{Vite::asset('resources/graphics/images/image_test_5.jpg')}}" alt="">
                             </a>
                         </div>
                         <div class="card-bottom">
@@ -294,7 +295,7 @@
                     <div class="card">
                         <div class="card-top">
                             <a href="#" class="card-img">
-                                <img src="images/items/image_test_6.jpg" alt="">
+                                <img src="{{Vite::asset('resources/graphics/images/image_test_6.jpg')}}" alt="">
                             </a>
                         </div>
                         <div class="card-bottom">
@@ -310,7 +311,7 @@
                     <div class="card">
                         <div class="card-top">
                             <a href="#" class="card-img">
-                                <img src="images/items/magnit.jpg" alt="">
+                                <img src="{{Vite::asset('resources/graphics/images/magnit.jpg')}}" alt="">
                             </a>
                         </div>
                         <div class="card-bottom">
@@ -327,7 +328,7 @@
                     <div class="card">
                         <div class="card-top">
                             <a href="#" class="card-img">
-                                <img src="images/items/Led.webp" alt="">
+                                <img src="{{Vite::asset('resources/graphics/images/Led.webp')}}" alt="">
                             </a>
                         </div>
                         <div class="card-bottom">
@@ -399,6 +400,5 @@
             </div>
         </div>
     </div>
-    <script src="js/category_toggle.js"></script>
 </body>
 </html>
